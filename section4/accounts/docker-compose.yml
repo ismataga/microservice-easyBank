@@ -1,17 +1,17 @@
 services:
   accounts:
-    image: "eazybytes/accounts:s4"
+    image: "ismataga/accounts:s4"
     container_name: accounts-ms
     ports:
-      - "8080:8080"
+      - "9999:9999"
     deploy:
       resources:
         limits:
           memory: 700m
     networks:
-      - eazybank
+      - ismataga
   loans:
-    image: "eazybytes/loans:s4"
+    image: "ismataga/loansloans:s4"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -20,9 +20,9 @@ services:
         limits:
           memory: 700m
     networks:
-      - eazybank
+      - ismataga
   cards:
-    image: "eazybytes/cards:s4"
+    image: "ismataga/cards:s4"
     container_name: cards-ms
     ports:
       - "9000:9000"
@@ -31,7 +31,7 @@ services:
         limits:
           memory: 700m
     networks:
-      - eazybank
+      - ismataga
 networks:
-  eazybank:
+  ismataga:
     driver: "bridge"
