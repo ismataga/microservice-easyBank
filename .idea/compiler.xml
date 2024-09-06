@@ -11,6 +11,12 @@
         <module name="accounts" />
         <module name="cards" />
       </profile>
+      <profile name="Annotation profile for configserver" enabled="true">
+        <sourceOutputDir name="../../../configserver/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../../configserver/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="configserver" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cards.main" target="21" />
@@ -21,6 +27,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="accounts" options="-parameters" />
       <module name="cards" options="-parameters" />
+      <module name="configserver" options="-parameters" />
       <module name="loans" options="-parameters" />
     </option>
   </component>
