@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ismataga</groupId>
-	<artifactId>eurokaserver</artifactId>
+	<artifactId>eurekaserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eurokaserver</name>
-	<description>eurokaserver</description>
+	<name>eurekaserver</name>
+	<description>eurekaserver</description>
 	<url/>
 	<licenses>
 		<license/>

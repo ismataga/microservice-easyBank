@@ -16,6 +16,9 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
@@ -33,6 +36,8 @@ AccountServiceImpl implements AccountService {
         if (optionalCustomer.isPresent()) {
             throw new CustomerAlreadyExistsException("Customer with the same mobile number already exists." + customer.getMobileNumber());
         }
+        List<Customer> customers = new LinkedList<>();
+        customers.remove(customer);
 
         Customer saveCustomer = customerRepository.save(customer);
         accountsRepository.save(createNewAccount(saveCustomer));
