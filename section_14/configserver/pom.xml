@@ -81,7 +81,7 @@
                 <version>3.4.3</version>
                 <configuration>
                     <to>
-                        <image>ismataga/${project.artifactId}:s13</image>
+                        <image>ismataga/${project.artifactId}:s14</image>
                     </to>
                 </configuration>
             </plugin>
